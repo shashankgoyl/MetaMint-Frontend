@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" href="./image/logoB.png"> -->
+    <link rel="icon" type="image/png" href="./image/logoW.png">
+    <title>MetaMint</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <!-- <a href="#" class="logo"> <i class="fa-brands fa-gg fa-flip" style="color: #27ae60;"></i> MetaMint </a> -->
+            <a href="#" class="logo"> <svg id="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path fill="#27ae60"
+                        d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
+                </svg> MetaMint </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search NFTs here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a id="wallet-btn" class="fas fa-wallet"></a>
+                <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+                <div id="cart" class="cart" data-totalitems="0">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">NFTs</a>
+                <a href="#arrivals">Drops</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">blogs</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form id="signin-form" action="https://formspree.io/f/xjvneowb" method="POST">
+            <h3>Sign In</h3>
+            <span>E-Mail</span>
+            <input type="email" name="email" class="box" placeholder="Enter your email" id="email">
+            <span>Password</span>
+            <input type="password" name="password" class="box" placeholder="Enter your password" id="password">
+            <div class="checkbox">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me"> Remember me</label>
+            </div>
+            <input type="submit" value="Sign In" class="btn">
+            <p>Forgot your password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create one</a></p>
+        </form>
+
+    </div>
+
+    <div class="wallet-form-container">
+
+        <div id="close-wallet-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <!-- <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn">
+                <img id="metamask_icon" src="./image/metamask.png" alt="metamask_icon">
+                MetaMask
+            </a>   -->
+            <a class="btn btn-primary" href="https://metamask.io/download/">
+                <img id="metamask_icon" src="./image/metamask.png" alt="metamask_icon">
+                MetaMask
+            </a>
+            <!-- <a class="btn btn-secondary" href="https://chromewebstore.google.com/detail/core-crypto-wallet-nft-ex/agoakfejjabomempkjlepdflaleeobhb">
+                <img id="core_icon" src="./image/core.png" alt="core_icon">
+                Core
+            </a>   -->
+            <a class="btn btn-secondary" href="https://core.app/en/">
+                <img id="core_icon" src="./image/core.png" alt="core_icon">
+                Core
+            </a>
+            <a class="btn btn-third" href="https://brave.com/wallet/">
+                <img id="brave_icon" src="./image/BraveBat.png" alt="core_icon">
+                Wallet
+            </a>
+            <!-- <a class="btn btn-secondary" href="brave://wallet/crypto/onboarding/new/terms">
+                <img id="brave_icon" src="./image/BraveBat.png" alt="core_icon">
+                Wallet
+            </a> -->
+
+            <a class="label" href="https://core.app/en/?connectWallet=1">
+                More wallet options
+            </a>
+            <!-- <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p> -->
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3> <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="#27ae60"
+                            d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" />
+                    </svg> MetaMint</h3>
+                <p> The world's one of the largest digital marketplace for crypto collectibles and non-fungible tokens
+                    (NFTs). Buy,
+                    sell, and discover exclusive digital items. </p>
+                <a href="https://opensea.io/" class="btn">Start Your Bid</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="./image/nft1.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft2.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft3.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft4.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft5.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft6.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft7.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft8.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft9.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft10.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft11.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft12.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="./image/nft13.jpg" alt=""></a>
+                </div>
+                <img src="image/stand.png" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ense  -->
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class='fas fa-handshake'></i>
+            <div class="content">
+                <!-- <h3>Trust</h3> -->
+                <h3>No third party</h3>
+                <p>no Hidden charge</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class='fas fa-money-bill'></i>
+            <div class="content">
+                <h3>secure Transactions</h3>
+                <p>100% secure Transaction</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>easy to use</h3>
+                <p>Easy sell & buy</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>call us anytime</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- icons section ends -->
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured NFTs</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The Future Art</h3>
+                        <div class="price">0.13 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Myth</h3>
+                        <div class="price">0.245 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Skull Crusher</h3>
+                        <div class="price">1.20 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Boba Bear</h3>
+                        <div class="price">0.0024 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Lil black cat</h3>
+                        <div class="price">0.2235 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Witch Cat</h3>
+                        <div class="price">0.2245 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Musical Astonaut</h3>
+                        <div class="price">2 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Warrior Bear</h3>
+                        <div class="price">0.356 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft9.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Thoughts of Ape</h3>
+                        <div class="price">0.458 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft10.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tate talks</h3>
+                        <div class="price">2.554 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft11.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Robotic Bull</h3>
+                        <div class="price">0.54 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft12.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Metallica</h3>
+                        <div class="price">0.458 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/nft13.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Petals on her</h3>
+                        <div class="price">0.478 ETH</div>
+                        <button class="add-to-cart-btn btn" onclick="addn(this)">
+                            Add to Cart
+                            <span class="cart-item"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <section class="newsletter">
+
+        <form id="subscription-form" action="https://formspree.io/f/xjvneowb" method="POST">
+            <h3>Stay in the loop</h3>
+            <p>Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and
+                tricks for navigating MetaMint.</p>
+            <input type="email" name="email" placeholder="Enter your email" class="box" id="email" required>
+            <button type="submit" id="btns">
+                <p id="btnText">Subscribe</p>
+                <div class="check-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+            </button>
+        </form>
+
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- arrivals section starts  -->
+
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"> <span>Drops</span> </h1>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival1.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The supreme box</h3>
+                        <div class="price">0.0025 ETH</div>
+                        <div class="volume">Volume : 25 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival2.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The angel monkey</h3>
+                        <div class="price">0.00365 ETH</div>
+                        <div class="volume">Volume : 3.65 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival3.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Red eyed demon</h3>
+                        <div class="price">0.456 ETH</div>
+                        <div class="volume">Volume : 4.56 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival4.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>The emperor</h3>
+                        <div class="price">0.145 ETH</div>
+                        <div class="volume">Volume : 1.45 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival5.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Multiverse of Chaos</h3>
+                        <div class="price">1.002 ETH</div>
+                        <div class="volume">Volume : 1.02 ETH</div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival6.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Heaven </h3>
+                        <div class="price">0.894 ETH</div>
+                        <div class="volume">Volume : 8.94 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival7.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Future</h3>
+                        <div class="price">0.1601 ETH</div>
+                        <div class="volume">Volume : 1.61 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival8.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Rockstar Games</h3>
+                        <div class="price">0.548 ETH</div>
+                        <div class="volume">Volume : 5.48 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival9.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tangerine Daydreams</h3>
+                        <div class="price">0.359 ETH</div>
+                        <div class="volume">Volume : 3.59 ETH</div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/newarrival10.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Animated heroes</h3>
+                        <div class="price">0.4052 ETH</div>
+                        <div class="volume">Volume : 4.52 ETH</div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- arrivals section ends -->
+
+    <!-- deal section starts  -->
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>drop of the day</h3>
+            <h1>"Core nightmare"</h1>
+            <p>Get your rare & high volume NFTs at common cost. <br> Hurry grab the deal!</p>
+            <a href="https://opensea.io/" class="btn">Start Your Bid</a>
+        </div>
+
+        <div class="image">
+            <!-- <img src="./image/sample1.webp" alt=""> -->
+            <img src="./image/sample2.webp" alt="">
+        </div>
+
+    </section>
+
+    <!-- deal section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> <span>customer's reviews</span> </h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="./image/profile1.png" alt="">
+                    <h3>Melissa Rauch</h3>
+                    <p>Game-Changing Platform</p> <br>
+                    <p>This NFT marketplace is a game-changer, offering a sleek interface, fair revenue shares for
+                        artists, and a vibrant community.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./image/profile2.png" alt="">
+                    <h3>Smith Leo</h3>
+                    <p>Artist-Friendly Hub</p> <br>
+                    <p>A dream platform for digital artists, it provides seamless showcasing, fair compensation, and a
+                        supportive community.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./image/profile3.png" alt="">
+                    <h3>Emily Hunt</h3>
+                    <p>Diverse and High-Quality Selection</p> <br>
+                    <p>With unparalleled diversity and quality, this marketplace caters to every taste, from digital art
+                        to virtual real estate.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/profile4.png" alt="">
+                    <h3>malik singh</h3>
+                    <p>Trustworthy and Secure</p> <br>
+                    <p>Revolutionizing ownership and authenticity, it prioritizes security and verification, ensuring
+                        genuine digital assets.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./image/profile5.png" alt="">
+                    <h3>Michael Wills</h3>
+                    <p>User-Friendly with Personalized Touch</p> <br>
+                    <p>Easy to use with personalized recommendations, it offers a curated journey for collectors and
+                        enthusiasts alike.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./image/profile6.png" alt="">
+                    <h3>Megan Jovon Ruth Pete</h3>
+                    <p>Transparent and Ethical</p> <br>
+                    <p>Standing out for its transparency and ethical practices, it supports fair compensation for
+                        artists while minimizing environmental impact.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> <span>our blogs</span> </h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>NFT Trends for 2024: Predictions & Challenges Explained</h3>
+                        <p>The forecast for 2024 revolves around several key aspects, from the burgeoning NFT gaming
+                            space to persisting regulatory uncertainties. In this blog post, we explore different
+                            perspectives found on the web and predictions on which trends may continue into 2024, as
+                            well as what challenges NFTs may face in the year ahead.</p>
+                        <a href="https://www.airnfts.com/post/nft-trends-for-2024-predictions-challenges-explained"
+                            class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>NFT Marketplaces Fully Supporting NFT Creator Royalties</h3>
+                        <p>The rise of digital media and online platforms has created new ways for artists to earn a
+                            living. In the past, royalties have been a major source of income for creators, providing
+                            them with ongoing compensation for their work. NFT creator royalties are a new tool that
+                            allows artists to earn passive income from their digital content.</p>
+                        <a href="https://www.airnfts.com/post/nft-marketplaces-fully-supporting-nft-creator-royalties"
+                            class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>6 Most Popular NFT Art to Invest in 2023</h3>
+                        <p>NFT-based art comes in various forms, from digital paintings and photographs to mesmerizing
+                            videos, musical compositions, and even video games. Essentially, anything you can imagine as
+                            digital art, including converted physical art, can be transformed into an NFT.</p>
+                        <a href="https://www.airnfts.com/post/6-most-popular-nft-art-to-invest-in-2023" class="btn">read
+                            more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>How to create an NFT</h3>
+                        <p>Anyone can create an NFT. Your NFT can be as simple as the media itself, but it can also
+                            represent something more. For example, your NFT can simply be a piece of art, or it can be a
+                            piece of music represented by a GIF or a photograph. Some NFTs, like the Chromie Squiggle
+                            below, are intended to serve as artwork. According to the artist, Snowfro, each Chromie
+                            Squiggle is his “personal signature as an artist, developer, and tinkerer.”</p>
+                        <a href="https://opensea.io/learn/nft/how-to-create-an-nft" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>What is a crypto wallet?</h3>
+                        <p>Think of your wallet as the key to your address on the blockchain — you use the key to open
+                            the safe where your items are stored on the blockchain and use the key to send/receive items
+                            to/from your address on the blockchain. Just like any key, security of your wallet and
+                            private key (or seed phrase) are critically important. In this article, we'll walk through
+                            the types of crypto wallets and how to set one up.</p>
+                        <a href="https://opensea.io/learn/web3/what-is-crypto-wallet" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./image/blog6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>How to sell an NFT</h3>
+                        <p>Selling NFTs isn’t just for the people who create them. An NFT can also be sold by the
+                            collector who bought or received it from the original creator, or the collector who bought
+                            or received it from the previous collector, and so on and so on. Whoever currently owns the
+                            NFT can sell it.</p>
+                        <a href="https://opensea.io/learn/nft/how-to-sell-nfts" class="btn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> africa </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> featured NFTs</a>
+                <a href="#arrivals"> <i class="fas fa-arrow-right"></i> Drops </a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="mailto:metamint05@ipec.org.in"> <i class="fas fa-envelope"></i> Email Us </a>
+                <img src="image/worldmap.png" class="map" alt="">
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="https://www.facebook.com/login.php" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/?lang=en-in" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://in.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://in.pinterest.com" target="_blank" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit"> created by <span>MetaMint</span> | 2024 all rights reserved! </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader  -->
+
+    <div class="loader-container" id="loading">
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
